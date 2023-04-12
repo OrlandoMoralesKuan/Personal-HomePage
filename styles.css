@@ -1,0 +1,113 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(#03045e, #90e0ef);
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#nav-text{
+    padding: 8px 15px;
+    color: black;
+    background-color: #afafaf;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+#nav-text:hover{
+    padding: 12px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: #ae2012;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.c-site-header{
+    font-size: 40px;
+    color: white;
+}
+
+
+.tittle-text{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 0px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    margin: 20px 0px 5px 0px;
+}
+
+.main-text{
+    display: flex;
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#about-text{    
+    width: 550px;
+    height: 350px;
+}
+
+#img-container{
+    width: 300px;
+    height: 380px;
+    padding-left: 30px;
+}
+
+#hobbie-text{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    justify-content: start;
+    color: white;
+    font-size: 30px;
+}
+
+#img-container1{
+    width: 300px;
+    height: 240px;
+}
+
+#country-text{
+    margin: 0px 35px 10px 35px;
+}
+
+.symbols{
+    display: flex;
+    justify-content: space-around;
+}
+
+#more-inf-nic{
+    color: white;
+    font-size: 20px;
+}
+
+span{
+    background-color: #9a8c98;
+    padding: 2px 9px;
+    font-size: 25px;
+}
+
+.video{
+    font-size: 20px;
+    margin-top: 30px;
+    color: white;
+}
+
+.footer{
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    color:#03045e;
+    background-color: white;
+    border: 3px solid #03045e;
+}
