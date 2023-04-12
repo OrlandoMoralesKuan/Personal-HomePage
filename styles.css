@@ -11,7 +11,7 @@ body{
     
 }
 
-#nav-text{
+.nav-text{
     padding: 8px 15px;
     color: black;
     background-color: #afafaf;
@@ -19,7 +19,7 @@ body{
     border-radius: 30px;
 }
 
-#nav-text:hover{
+.nav-text:hover{
     padding: 12px 30px;
     font-size: 20px;
     color: white;
@@ -53,46 +53,56 @@ body{
     margin-top: 10px;
 }
 
-#about-text{    
+.about-text{    
     width: 550px;
     height: 350px;
 }
 
-#img-container{
+.img-container{
     width: 300px;
     height: 380px;
     padding-left: 30px;
 }
 
-#hobbie-text{
+.hobbie-text{
     margin-top: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     justify-content: start;
     color: white;
     font-size: 30px;
 }
 
-#img-container1{
+.img-container1{
     width: 300px;
     height: 240px;
 }
 
-#country-text{
+.country-text{
     margin: 0px 35px 10px 35px;
 }
+
+.patriotic-text{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    justify-content: start;
+    color: white;
+    font-size: 30px;
+}
+
 
 .symbols{
     display: flex;
     justify-content: space-around;
 }
 
-#more-inf-nic{
-    color: white;
+.more-inf-nic{
+    color: #03045e;
     font-size: 20px;
 }
 
 span{
     background-color: #9a8c98;
+    color: white;
     padding: 2px 9px;
     font-size: 25px;
 }
@@ -103,7 +113,7 @@ span{
     color: white;
 }
 
-.footer{
+.c-site-footer{
     margin-top: 25px;
     font-weight: bold;
     font-size: 20px;
