@@ -101,8 +101,8 @@ body{
 }
 
 span{
-    background-color: #9a8c98;
-    color: white;
+    background-color: yellow;
+    color: red;
     padding: 2px 9px;
     font-size: 25px;
 }
