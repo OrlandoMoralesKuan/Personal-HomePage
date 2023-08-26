@@ -107,6 +107,24 @@ span{
     font-size: 25px;
 }
 
+#earn{
+    background-color: #90e0ef;
+    color: blue;
+    font-size: 25px;
+}
+
+#expen{
+    background-color: #90e0ef;
+    color: red;
+    font-size: 25px;
+}
+
+#total{
+    background-color: #90e0ef;
+    color: black;
+    font-size: 35px;
+}
+
 .video{
     font-size: 20px;
     margin-top: 30px;
