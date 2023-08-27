@@ -100,7 +100,7 @@ body{
     font-size: 20px;
 }
 
-span{
+#url{
     background-color: yellow;
     color: red;
     padding: 2px 9px;
@@ -108,19 +108,16 @@ span{
 }
 
 #earn{
-    background-color: #90e0ef;
     color: blue;
     font-size: 25px;
 }
 
 #expen{
-    background-color: #90e0ef;
     color: red;
     font-size: 25px;
 }
 
 #total{
-    background-color: #90e0ef;
     color: black;
     font-size: 35px;
 }
