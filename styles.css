@@ -136,3 +136,8 @@ body{
     background-color: white;
     border: 3px solid #03045e;
 }
+
+.total_result{
+    background: yellow;
+    color: red;
+}

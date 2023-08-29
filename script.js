@@ -86,3 +86,88 @@ document.getElementById('clear').addEventListener('click', (event) => {
   element_total3.innerText = 0;
 
 });
+
+var dice, rolls, array, x;
+
+function randomInt(n) {
+  // Return a random number from in [0, n[
+  return Math.floor(Math.random()*n);
+}
+
+function randomMember(arr) {
+  // Return a random member of the array
+  return arr[randomInt(arr.length)]
+}
+
+
+dice = [1, 2, 3, 4, 5, 6];
+rolls = [];
+let element_list_dice = document.getElementById('list_dice');
+element_list_dice.innerText = rolls;
+
+
+document.getElementById('button_roll').addEventListener('click', (event) => {
+  rolls.unshift(randomMember(dice));
+  let new_li = document.createElement('li');
+  rolls.forEach((array) => {
+    let element_number_dice = document.getElementById('number_dice');
+    element_number_dice.innerText = rolls;
+  });
+  rolls.forEach((array) => {
+    let element_roll_total = document.getElementById('roll_total');
+    element_roll_total.innerText = rolls.reduce((a,b) => a+b, 0);
+    x = rolls.reduce((a,b) => a+b, 0);
+    if (x == 11) {
+      let element_info = document.getElementById('info');
+      element_info.innerText = 'You won!!!';
+    }
+    if (x < 11) {
+      let element_info2 = document.getElementById('info');
+      element_info2.innerText = 'Keep playing!';
+    }
+    if (x > 11) {
+      let element_info3 = document.getElementById('info');
+      element_info3.innerText = 'You lost!';
+    }
+  });
+
+  event.target.appendChild(new_li);
+
+});
+
+document.getElementById('button_remove').addEventListener('click', (event) => {
+  let element_number_dice2 = document.getElementById('number_dice');
+  rolls.pop();
+  element_number_dice2.innerText = rolls;
+  let element_button_roll = document.getElementById('button_roll');
+  element_button_roll.replaceChildren();
+  element_button_roll.innerText = 'Roll the dice';
+  let element_roll_total2 = document.getElementById('roll_total');
+  element_roll_total2.innerText = rolls.reduce((a,b) => a+b, 0);
+  x = rolls.reduce((a,b) => a+b, 0);
+  if (x == 11) {
+    let element_info4 = document.getElementById('info');
+    element_info4.innerText = 'You won!!!';
+  }
+  if (x < 11) {
+    let element_info5 = document.getElementById('info');
+    element_info5.innerText = 'Keep playing!';
+  }
+
+});
+
+document.getElementById('button_restart').addEventListener('click', (event) => {
+  let element_number_dice3 = document.getElementById('number_dice');
+  element_number_dice3.replaceChildren();
+  let element_info6 = document.getElementById('info');
+  element_info6.replaceChildren();
+  element_info6.innerText = 'Keep playing!';
+  let element_roll_total3 = document.getElementById('roll_total');
+  element_roll_total3.replaceChildren();
+  element_roll_total3.innerText = 0;
+  let element_button_roll2 = document.getElementById('button_roll');
+  element_button_roll2.replaceChildren();
+  rolls = [];
+  element_button_roll2.innerText = 'Roll the dice';
+
+});
