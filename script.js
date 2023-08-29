@@ -108,7 +108,6 @@ element_list_dice.innerText = rolls;
 
 document.getElementById('button_roll').addEventListener('click', (event) => {
   rolls.unshift(randomMember(dice));
-  let new_li = document.createElement('li');
   rolls.forEach((array) => {
     let element_number_dice = document.getElementById('number_dice');
     element_number_dice.innerText = rolls;
@@ -130,8 +129,6 @@ document.getElementById('button_roll').addEventListener('click', (event) => {
       element_info3.innerText = 'You lost!';
     }
   });
-
-  event.target.appendChild(new_li);
 
 });
 
